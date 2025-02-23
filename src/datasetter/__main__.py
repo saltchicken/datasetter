@@ -178,7 +178,9 @@ def main():
     # parser.add_argument("--model", type=str, default="gpt-3.5-turbo")
     parser.add_argument("--context", action="store_true")
     args = parser.parse_args()
-    create_dataset(args.model, args.dataset)
+    # create_dataset(args.dataset)
+    Datacreator("train")
+    
 
 
 

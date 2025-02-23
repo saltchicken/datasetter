@@ -6,10 +6,14 @@ build-backend = "setuptools.build_meta"
 name = "datasetter"
 version = "0.1.1"
 dependencies = [
+  "datasets",
+  "matplotlib",
+  "seaborn",
+  "scikit-learn"
 ]
 
 [project.scripts]
-tuna = "datasetter.__main__:main"
+datasetter = "datasetter.__main__:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
